@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f7fafc"/>
+  <rect x="40" y="40" width="720" height="80" rx="8" fill="#1a365d"/>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle" font-weight="bold">PHARMA</text>
+  <rect x="40" y="140" width="720" height="420" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="60" y="170" width="210" height="160" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="165" y="200" font-family="Arial, sans-serif" font-size="48" text-anchor="middle">💊</text>
+  <text x="165" y="240" font-family="Arial, sans-serif" font-size="14" fill="#1a365d" text-anchor="middle" font-weight="bold">Generic Drugs</text>
+  <text x="165" y="260" font-family="Arial, sans-serif" font-size="11" fill="#718096" text-anchor="middle">150+ molecules</text>
+  <rect x="295" y="170" width="210" height="160" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="400" y="200" font-family="Arial, sans-serif" font-size="48" text-anchor="middle">🧪</text>
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="14" fill="#1a365d" text-anchor="middle" font-weight="bold">R&amp;D Center</text>
+  <text x="530" y="200" font-family="Arial, sans-serif" font-size="48" text-anchor="middle">🏭</text>
+  <text x="635" y="240" font-family="Arial, sans-serif" font-size="14" fill="#1a365d" text-anchor="middle" font-weight="bold">Manufacturing</text>
+</svg>

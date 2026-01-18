@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f7fafc"/>
+  
+  <!-- Header -->
+  <rect x="40" y="40" width="720" height="80" rx="8" fill="#1a365d"/>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle" font-weight="bold">CONSTRUCTION</text>
+  
+  <!-- Main Content Area -->
+  <rect x="40" y="140" width="720" height="420" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Project Cards -->
+  <g>
+    <rect x="60" y="170" width="210" height="160" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+    <text x="165" y="200" font-family="Arial, sans-serif" font-size="48" text-anchor="middle">🏗️</text>
+    <text x="165" y="240" font-family="Arial, sans-serif" font-size="14" fill="#1a365d" text-anchor="middle" font-weight="bold">Infrastructure</text>
+    <text x="165" y="260" font-family="Arial, sans-serif" font-size="11" fill="#718096" text-anchor="middle">Large-scale projects</text>
+    <rect x="80" y="280" width="170" height="30" rx="15" fill="#c19b5f"/>
+    <text x="165" y="301" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">View Details</text>
+  </g>
+  
+  <g>
+    <rect x="295" y="170" width="210" height="160" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+    <text x="400" y="200" font-family="Arial, sans-serif" font-size="48" text-anchor="middle">🏘️</text>
+    <text x="400" y="240" font-family="Arial, sans-serif" font-size="14" fill="#1a365d" text-anchor="middle" font-weight="bold">Residential</text>
+    <text x="400" y="260" font-family="Arial, sans-serif" font-size="11" fill="#718096" text-anchor="middle">Smart homes & complexes</text>
+    <rect x="315" y="280" width="170" height="30" rx="15" fill="#c19b5f"/>
+    <text x="400" y="301" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">View Details</text>
+  </g>
+  
+  <g>
+    <rect x="530" y="170" width="210" height="160" rx="6" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+    <text x="635" y="200" font-family="Arial, sans-serif" font-size="48" text-anchor="middle">🏢</text>
+    <text x="635" y="240" font-family="Arial, sans-serif" font-size="14" fill="#1a365d" text-anchor="middle" font-weight="bold">Commercial</text>
+    <text x="635" y="260" font-family="Arial, sans-serif" font-size="11" fill="#718096" text-anchor="middle">Business districts</text>
+    <rect x="550" y="280" width="170" height="30" rx="15" fill="#c19b5f"/>
+    <text x="635" y="301" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">View Details</text>
+  </g>
+  
+  <!-- Stats Section -->
+  <rect x="60" y="360" width="680" height="180" rx="6" fill="#1a365d" opacity="0.05"/>
+  <text x="400" y="390" font-family="Arial, sans-serif" font-size="16" fill="#1a365d" text-anchor="middle" font-weight="bold">PROJECT HIGHLIGHTS</text>
+  
+  <text x="200" y="430" font-family="Arial, sans-serif" font-size="28" fill="#c19b5f" text-anchor="middle" font-weight="bold">250+</text>
+  <text x="200" y="455" font-family="Arial, sans-serif" font-size="12" fill="#718096" text-anchor="middle">Projects Completed</text>
+  
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="28" fill="#c19b5f" text-anchor="middle" font-weight="bold">45km</text>
+  <text x="400" y="455" font-family="Arial, sans-serif" font-size="12" fill="#718096" text-anchor="middle">Infrastructure Built</text>
+  
+  <text x="600" y="430" font-family="Arial, sans-serif" font-size="28" fill="#c19b5f" text-anchor="middle" font-weight="bold">100%</text>
+  <text x="600" y="455" font-family="Arial, sans-serif" font-size="12" fill="#718096" text-anchor="middle">Safety Record</text>
+</svg>
