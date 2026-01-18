@@ -125,18 +125,74 @@
     .reveal{opacity:0;transform:translateY(30px);transition:all 0.8s cubic-bezier(0.4,0,0.2,1)}
     .reveal.in-view{opacity:1;transform:translateY(0)}
     
+    /* MOBILE MENU */
+    .mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:#fff;box-shadow:0 4px 20px rgba(0,0,0,0.1);z-index:99;padding:1rem 0}
+    .mobile-menu.active{display:block}
+    .mobile-menu a{display:block;padding:1rem 2rem;color:var(--text);text-decoration:none;font-weight:500;border-bottom:1px solid #f0f0f0}
+    .mobile-menu a:hover{background:var(--light);color:var(--secondary)}
+    
     /* RESPONSIVE */
     @media (max-width:980px){
+      .nav-container{padding:1rem 1.5rem}
       .nav-links{display:none}
       .mobile-toggle{display:block}
-      .hero-content[style*="grid-template-columns"]{grid-template-columns:1fr!important}
+      .logo{font-size:1.4rem}
+      
+      /* Hero */
+      .hero{min-height:100vh;height:auto;padding:6rem 0 4rem}
+      .hero-content[style*="grid-template-columns"]{grid-template-columns:1fr!important;gap:2rem!important}
+      .hero-content{padding:0 1.5rem!important}
       .hero-stats{margin-top:2rem}
-      .hero-title{font-size:2.5rem}
-      .hero-subtitle{font-size:1.1rem}
-      .verticals-grid,.projects-grid{grid-template-columns:1fr}
-      .news-grid{grid-template-columns:1fr}
-      .contact-container,.footer-container{grid-template-columns:1fr}
-      .section-title{font-size:2rem}
+      .hero-stats > div{grid-template-columns:1fr 1fr!important;gap:1rem!important}
+      .hero-stats > div > div{padding:1.5rem!important}
+      .hero-label{font-size:0.75rem}
+      .hero-title{font-size:2.2rem!important}
+      .hero-subtitle{font-size:1rem!important}
+      .hero-btns{flex-direction:column;gap:1rem}
+      .hero-btns button{width:100%;text-align:center}
+      
+      /* Sections */
+      .verticals,.projects,.news,.contact{padding:4rem 1.5rem!important}
+      .section-header{margin-bottom:2rem}
+      .section-label{font-size:0.8rem}
+      .section-title{font-size:1.8rem!important}
+      .section-subtitle{font-size:0.95rem!important}
+      
+      /* Grids */
+      .verticals-grid,.projects-grid{grid-template-columns:1fr!important}
+      .news-grid{grid-template-columns:1fr!important}
+      .contact-container,.footer-container{grid-template-columns:1fr!important}
+      
+      /* Cards */
+      .vertical-card,.project-card{margin-bottom:1rem}
+      .vertical-icon{font-size:3rem;padding:2rem 1rem 0.5rem}
+      .vertical-title{font-size:1.5rem}
+      .project-img{height:220px!important}
+      
+      /* News */
+      .news-item{flex-direction:column;gap:1rem}
+      .news-date{min-width:auto;width:100%;text-align:left;padding:1rem 1.5rem}
+      
+      /* Contact */
+      .contact-form{padding:2rem!important}
+      .contact-text h2{font-size:2rem!important}
+      .contact-text p{font-size:1rem!important}
+      
+      /* Footer */
+      footer{padding:3rem 1.5rem 1.5rem!important}
+      .footer-container{gap:2rem!important;margin-bottom:2rem!important}
+      .footer-brand{font-size:1.5rem}
+      
+      /* Modal */
+      .modal-content{max-width:95%!important;max-height:85%!important;padding:1rem!important}
+      .modal-close{top:1rem!important;right:1rem!important}
+    }
+    
+    @media (max-width:640px){
+      .hero-title{font-size:1.8rem!important}
+      .hero-subtitle{font-size:0.9rem!important}
+      .section-title{font-size:1.5rem!important}
+      .hero-stats > div{grid-template-columns:1fr!important}
     }
   </style>
 </head>
@@ -152,8 +208,17 @@
         <a href="#news" data-target="news">News</a>
         <a href="#contact" data-target="contact" class="cta-btn">Get in Touch</a>
       </div>
-      <button class="mobile-toggle" onclick="toggleMobile()">☰</button>
+      <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
     </div>
+  </div>
+  
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="closeMobileMenu()">Home</a>
+    <a href="#verticals" onclick="closeMobileMenu()">Business Wings</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#news" onclick="closeMobileMenu()">News</a>
+    <a href="#contact" onclick="closeMobileMenu()">Get in Touch</a>
   </div>
 
   <!-- HERO -->
@@ -554,10 +619,25 @@
 
     sections.forEach(section => navObserver.observe(section));
 
-    // Mobile menu toggle (placeholder for mobile implementation)
-    function toggleMobile(){
-      alert('Mobile menu functionality - To be implemented with responsive navigation drawer');
+    // Mobile menu toggle
+    function toggleMobileMenu(){
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('active');
     }
+    
+    function closeMobileMenu(){
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.remove('active');
+    }
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e){
+      const menu = document.getElementById('mobileMenu');
+      const toggle = document.querySelector('.mobile-toggle');
+      if(!menu.contains(e.target) && !toggle.contains(e.target)){
+        menu.classList.remove('active');
+      }
+    });
   </script>
 </body>
 </html>
